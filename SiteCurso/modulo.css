@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Tilt+Warp&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    cursor: pointer;
+    width: 90%;
+    display: inline-block;
+    font-family: 'Tilt Warp', cursive;
+    padding-left: 2rem;
+}
+
+h2{
+    font-family: 'Tilt Warp', cursive;
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.t-modulo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.modulo{
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+}
+.aulas{
+    position: relative;
+}
+
+.aula{
+    width: 20rem;
+    text-align: justify;
+    padding: 0 2rem;
+}
+
+.bg-azul{
+    background-color: rgb(70, 175, 224);
+}
+
+.bg-verde{
+    background-color: rgb(105, 231, 56);
+}
+
+.bg-amarelo{
+    background-color: rgb(233, 230, 47);
+}
+
+.container{
+    width: calc(100% - 3.5rem);
+    margin: 1rem;
+    height: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: height 0.5s ease-out, visibility 0.5s;
+    visibility: hidden;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #eee;
+    justify-content: space-evenly;
+}
+.container.show {
+    height: 17rem;
+    visibility: visible;
+}
+
+.flecha{
+    margin-right: 4rem;
+    font-size: 2.5rem;
+    text-align: right;
+    transform: rotate(-90deg);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.flecha.gira{
+    transform: rotate(90deg);
+}
+
+.botao{
+    display: block;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    background-color: red;
+    color: #eee;
+    font-family: 'Tilt Warp', cursive;
+    transition: 0.7s;
+}
+
+.botao:hover{
+    border: 1px solid red;
+    background-color: #fff;
+    color: red;
+
+}
+
+@media only screen and (max-width: 1215px) {
+    .container.show{
+       height: 30rem;
+    }
+
+}
+@media only screen and (max-width: 850px) {
+    .container.show{
+       height: 45rem;
+    }
+
+}
