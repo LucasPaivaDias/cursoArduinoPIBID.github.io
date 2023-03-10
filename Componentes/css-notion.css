@@ -43,7 +43,13 @@
     color: #ccc;
     font-size: 3.5rem;
   }
-
+  .imagem-xpequena{
+	width: 6rem;
+	display: inline-block;
+	align-self: center;
+	margin: 0 auto;
+	transition: 0.7s;
+  }
 
 html {
 	-webkit-print-color-adjust: exact;
