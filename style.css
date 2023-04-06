@@ -37,10 +37,24 @@ body{
     flex-direction: column;
     align-items: center;
     box-shadow: 1rem 1rem 1rem rgba(85, 85, 85, 0.562);
+    border-radius: 1rem;
 }
+
+.bloco-simples-2{
+  width: 23rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
 
 .bloco-img{
     padding: 2rem;
+}
+
+.display-block{
+  display: block;
 }
 
 .bloco-img-simples{
@@ -82,6 +96,11 @@ body{
     margin-bottom: 1rem;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: justify;
+}
+
+.imagem{
+  width: 8rem;
+  margin: 0 0;
 }
 
 .imagem-pequena{
@@ -147,8 +166,16 @@ body{
     background-color: brown;
 }
 
+.bg-verde{
+  background-color: rgb(87, 204, 146);
+}
+
 .bg-branco{
     background-color: rgba(255, 255, 255, 0.945);
+}
+
+.bg-azul{
+  background-color: rgb(59, 192, 209);
 }
 
 .h1{
